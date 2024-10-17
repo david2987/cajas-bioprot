@@ -1,0 +1,68 @@
+-- categorias
+INSERT INTO `cajas_db`.`categorias` (`id`, `nombre_categoria`, `created_at`, `updated_at`) VALUES (1,'OSTEOSINTESIS', NULL, NULL);
+INSERT INTO `cajas_db`.`categorias` (`id`, `nombre_categoria`, `created_at`, `updated_at`) VALUES (2,'ARTROSCOPIA', NULL, NULL);
+INSERT INTO `cajas_db`.`categorias` (`id`, `nombre_categoria`, `created_at`, `updated_at`) VALUES (3,'RODILLA', NULL, NULL);
+INSERT INTO `cajas_db`.`categorias` (`id`, `nombre_categoria`, `created_at`, `updated_at`) VALUES (4,'CADERA', NULL, NULL);
+INSERT INTO `cajas_db`.`categorias` (`id`, `nombre_categoria`, `created_at`, `updated_at`) VALUES (5,'CLAVOS', NULL, NULL);
+
+-- Cajas 
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (1,'BIOPROT 003-24 - OSTEO 3.5 ACERO','DISPONIBLE','BIOPROT 003-24 - OSTEO 3.5 ACERO.pdf','BIOPROT 003-24 - OSTEO 3.5 ACERO 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (2,'CANULADOS 3.5-4.0 -CA 002-24','DISPONIBLE','CANULADOS 3.5-4.0 -CA 002-24.pdf','CA 002-24 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (3,'C 321 - SUTURA MENISCAL','DISPONIBLE','C 321 - SUTURA MENISCAL.pdf','C 321 - SUTURA MENISCAL.jpg',2);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (4,'CANULADOS 3.5 - 4.0 BIOPROT 1','DISPONIBLE','CANULADOS 3.5 - 4.0 BIOPROT 1.pdf','CANULADOS 3.5 - 4.0 BIOPROT 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (5,'CANULADOS 7.0 CAJA BIOPROT','DISPONIBLE','CANULADOS 7.0 CAJA BIOPROT.pdf','CANULADOS 7.0 BIOPROT 01.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (6,'PTR CDH','DISPONIBLE','PTR CDH.pdf','rodilla cdh 1.jpg',3);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (7,'PTR CDH 2024','DISPONIBLE','PTR CDH 2024.pdf','rodilla cdh 2024 - 1.jpg',3);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (8,'INSTRUMENTAL TALLO REVISION CEMENTADO (23-07-24)','DISPONIBLE','INSTRUMENTAL TALLO REVISION CEMENTADO (23-07-24).pdf','',4);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (9,'H 640 - HERBERT','DISPONIBLE','H 640 - HERBERT.pdf','H 640 - HERBERT.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (10,'MOSAICOPLASTIA','DISPONIBLE','MOSAICOPLASTIA.pdf','MOSAICO 1.jpg',2);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (11,'H 634 - HERBERT','DISPONIBLE','H 634 - HERBERT.pdf','H 634 - HERBERT.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (12,'H 631 - PLACA VOLAR','DISPONIBLE','H 631 - PLACA VOLAR','H 631 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (13,'H 615 - MINIHERBERT','DISPONIBLE','H 615 - MINIHERBERT.pdf','H 615 - MINIHERBERT.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (14,'H 651 - PLACA VOLAR','DISPONIBLE','H 651 - PLACA VOLAR.pdf','H 651 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (15,'H 612 - MINIHERBERT','DISPONIBLE','H 612 - MINIHERBERT.pdf','H 612 - MINIHERBERT.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (16,'H 552 - PLACA VOLAR','DISPONIBLE','H 552 - PLACA VOLAR.pdf','H 552-1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (17,'H 661 - PLACA VOLAR','DISPONIBLE','H 661 - PLACA VOLAR.pdf','H 661 -1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (18,'H 724 - HERBERT','DISPONIBLE','H 724 - HERBERT.pdf','H 724 - HERBERT.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (19,'I 578 - SET DE EXTRACCION UNIVERSAL','DISPONIBLE','I 578 - SET DE EXTRACCION UNIVERSAL.pdf','I 578 - SET DE EXTRACCION UNIVERSAL.jpg',5);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (20,'H 706 C - PLACA VOLAR POLIAXIAL','DISPONIBLE','H 706 C - PLACA VOLAR POLIAXIAL.pdf','VOLAR POLIAXIAL 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (21,'H 705 - PLACA VOLAR POLIAXIAL','DISPONIBLE','H 705 - PLACA VOLAR POLIAXIAL.pdf','H 705 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (22,'H-001 24 - HERBERT -BAROUCK','DISPONIBLE','H 001-24  HERBERT -BAROUCK.pdf','H-001 24 - HERBERT -BAROUCK.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (23,'H 667 - TWIST OFF','DISPONIBLE','H 667 - TWIST OFF.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (24,'H 524 - PLACA VOLAR','DISPONIBLE','H 524 - PLACA VOLAR.pdf','H 524 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (25,'H 495 - PLACA VOLAR','DISPONIBLE','H 495 - PLACA VOLAR.pdf','H495 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (26,'H 476 - PLACA VOLAR','DISPONIBLE','H 476 - PLACA VOLAR.pdf','H 476 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (27,'F 519 - CLAVO NANCY','DISPONIBLE','F 519 - CLAVO NANCY.pdf','F 519 - 1.jpg',5);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (28,'ENDERS FICO','DISPONIBLE','ENDERS FICO.pdf','ENDER 1.jpg',5);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (29,'BIOPROT 001-24 - OSTEO 3.5 ACERO','DISPONIBLE','BIOPROT 001-24 - OSTEO 3.5 ACERO.pdf','BIOPROT 3.5 001-24 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (30,'CANULADOS 3.5 - 4.0 BIOPROT 3','DISPONIBLE','CANULADOS 3.5 - 4.0 BIOPROT 3.pdf','CANULADOS 3.5 - 4.0 BIOPROT 3.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (31,'B 343 - PTC MTT COMBINADA','DISPONIBLE','B 343 - PTC MTT COMBINADA.pdf','B 343 CADERA 1.jpg',4);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (32,'B 342 - PPC BIPOLAR','DISPONIBLE','B 342 - PPC BIPOLAR.pdf','B 342 - BIPOLAR MTT 1.jpg',4);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (33,'B 158 - PTC MTT COMBINADA','DISPONIBLE','B 158 - PTC MTT COMBINADA','B 158 - PTC MTT COMBINADA.docx',4);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (34,'AT 214 - CANULADOS 7.0','DISPONIBLE','AT 214 - CANULADOS 7.0.pdf','AT - 214 .jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (35,'AT 205 - CANULADOS 3.5 - 4.0 - 4.5','DISPONIBLE','AT 205 - CANULADOS 3.5 - 4.0 - 4.5.pdf','AT 205.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (36,'AT 173 - CANULADOS 3.5 - 4.0 - 4.5','DISPONIBLE','AT 173 - CANULADOS 3.5 - 4.0 - 4.5.pdf','AT 173 - CANULADOS 3.5 - 4.0 - 4.5.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (37,'AT 097 - CANULADOS 7.0 MM','DISPONIBLE','AT 097 - CANULADOS 7.0 MM.pdf','AT 097 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (38,'AT 088 - PLACA EN 8','DISPONIBLE','AT 088 - PLACA EN 8.pdf','AT 088 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (39,'AT 085 - CANULADOS 7.0 TITANIO','DISPONIBLE','AT 085 - CANULADOS 7.0 TITANIO.pdf','AT 085 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (40,'AP 466 - TRYPTON','DISPONIBLE','AP 466 - TRYPTON.pdf','AP 466 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (41,'AP 465 - PHILO TITANIO','DISPONIBLE','AP 465 - PHILO TITANIO.pdf','AP 465 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (42,'AP 408 - HUMERO DISTAL -OLECRANON','DISPONIBLE','AP 408 - HUMERO DISTAL -OLECRANON.pdf','AP 408 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (43,'AP 401 - TRYPTON','DISPONIBLE','AP 401 - TRYPTON.pdf','AP 401 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (44,'AP 253 - OSTEO 4.5 TITANIO','DISPONIBLE','AP 253 - OSTEO 4.5 TITANIO.pdf','AP 253 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (45,'AP 356 - OSTEO 4.5 TITANIO','DISPONIBLE','AP 356 - OSTEO 4.5 TITANIO.pdf','AP 356 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (46,'AP 354 - PERONE','DISPONIBLE','AP 354 - PERONE.pdf','AP354 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (47,'AP 352 C - CLAVICULA','DISPONIBLE','AP 352 C - CLAVICULA.pdf','AP 352 C - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (48,'AP 340 -TRYPTON','DISPONIBLE','AP 340 -TRYPTON.pdf','AP 340 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (49,'AP 246 - OSTEO 3.5 TITANIO','DISPONIBLE','AP 246 - OSTEO 3.5 TITANIO.pdf','AP 246 - 1.jpg',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (50,'AP 226 - TRYPTON','DISPONIBLE','AP 226 - TRYPTON.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (51,'AP 221 - OSTEO 3.5 ACERO','DISPONIBLE','AP 221 - OSTEO 3.5 ACERO.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (52,'AP 209 - OSTEO 3.5 ACERO','DISPONIBLE','AP 209 - OSTEO 3.5 ACERO.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (53,'AP 150 - OSTEO 3.5 ACERO','DISPONIBLE','AP 150 - OSTEO 3.5 ACERO.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (54,'AP 211 - OSTEO 3.5 ACERO','DISPONIBLE','AP 211 - OSTEO 3.5 ACERO.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (55,'AP 141 - OLECRANON','DISPONIBLE','AP 141 - OLECRANON.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (56,'AP 131 - CLAVICULA','DISPONIBLE','AP 131 - CLAVICULA.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (57,'AP 097 - OSTEO 3.5 ACERO','DISPONIBLE','AP 097 - OSTEO 3.5 ACERO.pdf','',1);
+INSERT INTO `cajas_db`.`cajas` (`id`, `nombre_caja`, `estado_caja`, `contenido`, `imagen`, `categoria_id`) VALUES (58,'AP 072 - PILON TIBIAL ACERO','DISPONIBLE','AP 072 - PILON TIBIAL ACERO.pdf','',1);
+
+
