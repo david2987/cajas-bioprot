@@ -81,6 +81,7 @@ $(document).ready(function () {
     function closeMensaje(){
         $("#mensajeAlert").addClass('invisible');
         $("#descripcionAlert").empty();
+        window.location.reload();
     }
 
 

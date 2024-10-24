@@ -108,7 +108,7 @@ class Movimientos extends Controller
                 'usuario_despacho' => $this->request->getPost('usuario_despacho')
             ]);
 
-            if($this->request->getPost('tipo_entrada') == 'S'){
+            if($this->request->getPost('tipo_entrada') == 'Salida'){
                 $CajasContoller->cambioEstadoCaja($this->request->getPost('caja_id'),'PENDIENTE');
             }else{                
                 $CajasContoller->cambioEstadoCaja($this->request->getPost('caja_id'),'PARA CONSUMO');
