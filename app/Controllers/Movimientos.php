@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\MovimientoModel;
 use App\Models\CajaModel;
 use CodeIgniter\Controller;
+use App\Controllers\Cajas;
 
 class Movimientos extends Controller
 {
@@ -71,6 +72,7 @@ class Movimientos extends Controller
     public function store()
     {
         $model = new MovimientoModel();
+        $CajasContoller = new Cajas();        
         
         // VALIDA QUE LA FECHA DE SALIDA EXISTA        
         if($this->request->getPost('tipo_entrada') == 'S' &&  !$this->request->getPost('fecha_salida')){
@@ -105,6 +107,13 @@ class Movimientos extends Controller
                 'momento_retiro' => $this->request->getPost('momento_retiro'),
                 'usuario_despacho' => $this->request->getPost('usuario_despacho')
             ]);
+
+            if($this->request->getPost('tipo_entrada') == 'S'){
+                $CajasContoller->cambioEstadoCaja($this->request->getPost('caja_id'),'PENDIENTE');
+            }else{                
+                $CajasContoller->cambioEstadoCaja($this->request->getPost('caja_id'),'PARA CONSUMO');
+            }
+
             return redirect()->to('/cajas')->with('success', 'Movimiento creado con éxito.');
         } else {          
             return redirect()->back()->with('error', 'Por favor completa todos los campos.')->withInput();

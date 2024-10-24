@@ -73,3 +73,6 @@
         <div class="p-2 " style="background-color: #ccc;color:black" >
             <b class="ml-4">Usuario : <?= session('user_name') ?></b> 
         </div>
+        <div class="w-100 "  style="position: fixed; text-align: -webkit-right;" >
+            <?php include('message.php'); ?>
+        </div>

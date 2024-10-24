@@ -141,7 +141,7 @@ class Cajas extends Controller
 
     public function view($id)
     {
-        $model = new CajaModel();
+         $model = new CajaModel();
         $data['caja'] = $model->find($id);
 
         if (!$data['caja']) {
@@ -160,8 +160,18 @@ class Cajas extends Controller
 
     public function cambioEstadoCaja($id, $nuevoEstado)
     {
-        $cajaModel = new CajaModel();
-        $cajaModel->cambioEstado($id, $nuevoEstado);
+        try {
+            $model = new CajaModel();    
+            $data = [
+                "estado_caja" => $nuevoEstado
+            ];
+            $model->update($id,$data); 
+            return true;
+        } catch (Error $error) {           
+            // throw new Exception($error);
+            return false;
+        }
+                      
     }
 
     public function obtenerImagenesCaja($idCaja){
@@ -169,6 +179,13 @@ class Cajas extends Controller
         $imagenesCaja = $CajaModel->where('id',$idCaja);
         
         return $imagenesCaja;
+    }
+
+    public function obtenerEstado($idCaja){
+        $CajaModel = new CajaModel();
+        $caja = $CajaModel->where('id',$idCaja);
+        
+        return $caja->estado_caja;        
     }
 
     public function agregarImagenesCaja()
@@ -229,6 +246,22 @@ class Cajas extends Controller
         } catch (Exception $error) {
             throw new Exception($error);
         }
+    }
+
+    public function disponibilizar($id){       
+        $id = $this->request->getPost('cajaId');         
+        if($this->cambioEstadoCaja($id,'DISPONIBLE')){
+            $data = [
+                "ok" => "success",
+                "mensaje" => "Se Disponibilizado Correctamente!"
+            ];            
+        }else{
+            $data = [
+                "ok" => "error",
+                "mensaje" => "Error al Disponibilizar la caja"
+            ];
+        }
+        return json_encode($data);
     }
 
     public function generate_qrcode($data)

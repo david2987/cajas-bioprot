@@ -14,6 +14,7 @@ $routes->get('/cajas/edit/(:num)', 'Cajas::edit/$1');
 $routes->post('/cajas/update/(:num)', 'Cajas::update/$1');
 $routes->get('/cajas/delete/(:num)', 'Cajas::delete/$1');
 $routes->post('/cajas/agregarImagenesCaja','Cajas::agregarImagenesCaja');
+$routes->post('/cajas/disponibilizar/(:num)','Cajas::disponibilizar/$1');
 
 
 
