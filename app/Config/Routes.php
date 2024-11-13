@@ -11,6 +11,7 @@ $routes->get('/cajas', 'Cajas::index');
 $routes->get('/cajas/create', 'Cajas::create');
 $routes->post('/cajas/store', 'Cajas::store');
 $routes->get('/cajas/edit/(:num)', 'Cajas::edit/$1');
+$routes->get('/cajas/view/(:num)', 'Cajas::view/$1');
 $routes->post('/cajas/update/(:num)', 'Cajas::update/$1');
 $routes->get('/cajas/delete/(:num)', 'Cajas::delete/$1');
 $routes->post('/cajas/agregarImagenesCaja','Cajas::agregarImagenesCaja');
@@ -35,7 +36,7 @@ $routes->get('/movimientos/delete/(:num)', 'Movimientos::delete/$1');
 $routes->get('/movimientos/show/(:num)', 'Movimientos::show/$1');
 
 $routes->get('/qr/generate/(:num)', 'QrController::generateQr/$1');
-
+$routes->get('/qr/generateqr', 'QrController::runProcessCajas');
 
 
 $routes->get('/auth/login', 'Auth::login');
@@ -93,3 +94,4 @@ $routes->get('/movimientos/show/(:num)', 'Movimientos::show/$1');
 $routes->get('/gallery', 'Gallery::index');
 $routes->get('/gallery/upload', 'Gallery::upload');
 $routes->post('/gallery/upload', 'Gallery::upload');
+$routes->get('/gallery/getImagesCaja/(:num)' , 'Gallery::getImagesCaja/$1');

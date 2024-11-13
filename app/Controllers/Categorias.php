@@ -26,8 +26,7 @@ class Categorias extends Controller
         $data = [
             'nombre_categoria' => $this->request->getPost('nombre_categoria'),
         ];
-        $model->save($data);
-        
+        $model->save($data);        
         return redirect()->to('/categorias');
     }
 

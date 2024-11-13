@@ -1,6 +1,6 @@
 <?= $this->include('templates/header_login') ?>
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container " style="margin-top: 15vh;">
+    <div class="row justify-content-center ">
         <div class="col-md-6">
             <h1 class="text-center">Iniciar Sesión</h1>
             <?php if (session()->getFlashdata('error')): ?>
@@ -21,4 +21,4 @@
         </div>
     </div>
 </div>
-<?= $this->include('templates/footer') ?>
+<?= $this->include('templates/footer_login') ?>

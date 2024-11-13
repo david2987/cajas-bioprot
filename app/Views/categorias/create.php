@@ -2,6 +2,7 @@
 <div class="container">
     <h1>Crear Categoría</h1>
     <form action="/categorias/store" method="post">
+        <?= csrf_field() ?>
         <div class="form-group">
             <label for="nombre_categoria">Nombre de la Categoría</label>
             <input type="text" name="nombre_categoria" class="form-control" required>

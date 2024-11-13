@@ -41,8 +41,18 @@ class Gallery extends Controller
                 }                
                 return redirect()->to('/gallery');
             }
+
         }
 
         return view('galeria/upload_view');
     }
+
+    function getImagesCaja($idCaja){
+        $db      = \Config\Database::connect();
+        $query = $db->query('SELECT image_path FROM cajas_gallery INNER JOIN gallery ON gallery.id = cajas_gallery.id_gallery WHERE id_cajas = '.$idCaja);
+        $results = $query->getResultArray();
+
+        return json_encode($results);        
+    }
+
 }

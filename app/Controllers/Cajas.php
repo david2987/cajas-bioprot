@@ -142,12 +142,16 @@ class Cajas extends Controller
     public function view($id)
     {
          $model = new CajaModel();
-        $data['caja'] = $model->find($id);
-
+        // $data['caja'] = $model->find($id);
+        $cajas =  $model->getCajaConCategoria($id);
+         foreach ($cajas as $caja) {            
+             $data['caja'] = $caja;
+         } 
+        
         if (!$data['caja']) {
             return redirect()->to('/cajas')->with('error', 'Caja no encontrada.');
         }
-
+        
         return view('cajas/view', $data);
     }
 

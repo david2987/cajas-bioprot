@@ -20,4 +20,14 @@ class CajaModel extends Model
     }
 
 
+    public function getCajaConCategoria($id)
+    {
+        if ($id) {
+            return $this->select('cajas.*, categorias.nombre_categoria')
+                ->join('categorias', 'categorias.id = cajas.categoria_id', 'left')
+                ->where('cajas.id', $id)
+                ->paginate(10);
+        }
+        return false;
+    }
 }
